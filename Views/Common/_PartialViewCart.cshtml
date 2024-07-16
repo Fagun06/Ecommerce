@@ -1,0 +1,11 @@
+﻿<div id="dvViewCartsWrapper" style="position:fixed; right:-300px;top:0px;bottom:0px;width:300px;background:#ccc; overflow:auto">
+   
+    <div id="dvViewCarts" style="position:absolute; top:0px;width:100%;background:#ccc; display:block">
+    </div>
+
+    <button class="btn btn-primary" style="width:100%; position:absolute;bottom:0px;height:40px;"
+            onclick="javascript:ProductController.PrepareCartForCheakout('@Url.Action("Cheakout","Product")')">
+        Cheakout
+    </button>
+
+</div>

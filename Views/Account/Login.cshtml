@@ -1,0 +1,90 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>View</title>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+            crossorigin="anonymous">
+    </script>
+
+    <script src="~/js/controller/accountcontroller.js"></script>
+    <script src="~/js/service/accountservice.js"></script>
+
+</head>
+<body>
+    
+        <div style="width:400px; height:600px; border:1px solid red; position:absolute; top:0px; bottom:0px; left:0px; right:0px; margin:auto">
+            <div class="content">
+                <div class="row" style="padding:5px 0px;">
+                    <div class="col col-sm-12">
+                        <h2 style="text-align:center">Log in</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col col-sm-2">
+                    </div>
+                    <div class="col col-sm-8">
+                        User Name
+                    </div>
+                    <div class="col col-sm-2">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-sm-2">
+                    </div>
+                    <div class="col col-sm-8">
+                        <input type="text" id="txtUserName" style="width: 100%;" />
+                    </div>
+                    <div class="col col-sm-2">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col col-sm-2">
+                    </div>
+                    <div class="col col-sm-8">
+                        Password
+                    </div>
+                    <div class="col col-sm-2">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-sm-2">
+                    </div>
+                    <div class="col col-sm-8">
+                       
+                        <input type="text" id="txtPassword" style="width: 100%;" />
+                    </div>
+                    <div class="col col-sm-2">
+                    </div>
+                </div>
+
+                <div class="row" style="padding:5px 0px">
+                    <div class="col col-sm-2">
+                    </div>
+                    <div class="col col-sm-8">
+                    <input type="submit" id="btnLogin" value="Login" name="btnSubmit" style="width: 100%; max-width: 100%" onclick="javaScript:AccountController.VerifyUser(this,'@Url.Action("Index","Product")')"/>
+                        <input type="submit" id="btnReset" value="Reset" name="btnSubmit" style="width: 100%; max-width: 100%" />
+                    <input type="submit" id="btnForgetPassword" value="Forget Password" name="btnSubmit" style="width: 100%;"/>
+                    </div>
+                    <div class="col col-sm-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+   @*  @Html.Partial("~/Views/Common/_PartialGlobalMsg.cshtml") *@
+
+</body>
+</html>

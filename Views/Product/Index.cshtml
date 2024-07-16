@@ -1,0 +1,34 @@
+﻿@* @{
+    ViewData["Title"] = "Product Page";
+} *@
+
+
+
+<script>
+	$(document).ready(function () {
+		ProductController.LstProducts();
+		
+	})
+
+</script>
+
+
+
+<div class="container-xl">
+	<div class="row">
+		<div class="col-md-12">
+			<h2>Products</h2>
+			<div id="MyCarousel" class="carousel">
+				<div class="carousel-inner">
+					<div class="item carousel-item active">
+						<div class="row" id="dvProductList">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+@Html.Partial("~/views/common/_PartialViewCart.cshtml")
+
